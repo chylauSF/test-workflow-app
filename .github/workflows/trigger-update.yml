@@ -1,0 +1,13 @@
+name: Trigger Update
+on:
+  workflow_dispatch:
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: trigger-update
+        uses: ./.github/actions/hello-world
