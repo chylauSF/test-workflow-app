@@ -11,3 +11,5 @@ jobs:
 
       - name: start-update
         uses: ./.github/actions/start-update
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
