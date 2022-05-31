@@ -6,11 +6,11 @@ on:
     - 'main'
 
 jobs:
-  strategy:
-    matrix: 
-      repos: [test-frontend, test-frontend-two]
-  action:
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix: 
+        repos: [test-frontend, test-frontend-two]
 
     steps:
       - uses: actions/checkout@v1
