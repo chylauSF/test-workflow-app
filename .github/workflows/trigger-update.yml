@@ -9,7 +9,13 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: start-update
-        uses: ./.github/actions/start-update
+      - name: Build Web App
+        run: |
+          echo "Build Web App"
+          sleep 10s
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          owner: chylauSF
+          repo: test-frontend
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          workflow_file_name: update-knit.yml
