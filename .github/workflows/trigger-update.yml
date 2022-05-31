@@ -9,5 +9,5 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: trigger-update
-        uses: ./.github/actions/hello-world
+      - name: start-update
+        uses: ./.github/actions/start-update
