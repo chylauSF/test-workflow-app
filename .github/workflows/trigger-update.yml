@@ -18,4 +18,4 @@ jobs:
           owner: chylauSF
           repo: test-frontend
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          workflow_file_name: update-knit.yml
+          workflow_file_name: update-knit-workflow.yml
