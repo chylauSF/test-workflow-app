@@ -1,6 +1,6 @@
 name: Trigger Update
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   action:
