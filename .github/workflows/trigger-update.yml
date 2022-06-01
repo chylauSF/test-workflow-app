@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: 
-        repos: [test-frontend, test-frontend-two, non-existent]
+        repos: [test-frontend, test-frontend-two, non-existent, archived]
 
     steps:
       - uses: actions/checkout@v1
