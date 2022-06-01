@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix: 
-        repos: [test-frontend, test-frontend-two]
+        repos: [test-frontend, test-frontend-two, non-existent]
 
     steps:
       - uses: actions/checkout@v1
